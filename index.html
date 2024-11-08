@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Main Weather Container -->
+    <div class="weather-container">
+      <h1 id="city-name">Weather App</h1>
+      
+      <div class="search">
+        <button id="loc" type="click" onclick="advancedLocationCheck()">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+          Get Location
+        </button>
+        <input type="text" id="city-input" placeholder="Enter city name">
+        <button id="button" type="click">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          Search
+        </button>
+        
+      </div>
+
+      <!-- Current Weather Container -->
+      <div class="container">
+        <div class="weather-main">
+          <span class="date">22-1111-12</span>
+          <div class="temp">18°C</div>
+          <div class="description">Cloudy</div>
+          <div class="icon">
+            <img id="img" src="" alt="Weather Icon">
+          </div>
+        </div>
+        <div class="details">
+          <span>Humidity: 75%</span>
+          <span>Wind: 10 km/h</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Forecast Section -->
+    <div class="forecast-container">
+      <!-- Day 1 -->
+      <div class="forecast-card">
+        <div class="forecast-day">Monday</div>
+        <div class="forecast-main">
+          <div class="forecast-icon">
+            <img src="" alt="Sunny">
+          </div>
+          <div class="forecast-temp">22°C</div>
+        </div>
+        <div class="forecast-details">
+          <span>OVERCAST CLOUD</span>
+          <div class="forecast-info">
+            <span>H: 80%</span>
+            <span>W: 12 km/h</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Day 2 -->
+      <div class="forecast-card">
+        <div class="forecast-day">Tuesday</div>
+        <div class="forecast-main">
+          <div class="forecast-icon">
+            <img src="" alt="Partly Cloudy">
+          </div>
+          <div class="forecast-temp">20°C</div>
+        </div>
+        <div class="forecast-details">
+          <span>OVERCAST CLOUD</span>
+          <div class="forecast-info">
+            <span>H: 75%</span>
+            <span>W: 15 km/h</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Day 3 -->
+      <div class="forecast-card">
+        <div class="forecast-day">Wednesday</div>
+        <div class="forecast-main">
+          <div class="forecast-icon">
+            <img src="" alt="Rainy">
+          </div>
+          <div class="forecast-temp">17°C</div>
+        </div>
+        <div class="forecast-details">
+          <span>OVERCAST CLOUD</span>
+          <div class="forecast-info">
+            <span>H: 85%</span>
+            <span>W: 20 km/h</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Day 4 -->
+      <div class="forecast-card">
+        <div class="forecast-day">Thursday</div>
+        <div class="forecast-main">
+          <div class="forecast-icon">
+            <img src="" alt="Cloudy">
+          </div>
+          <div class="forecast-temp">19°C</div>
+        </div>
+        <div class="forecast-details">
+          <span>OVERCAST CLOUD</span>
+          <div class="forecast-info">
+            <span>H: 70%</span>
+            <span>W: 10 km/h</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Day 5 -->
+      <div class="forecast-card">
+        <div class="forecast-day">Friday</div>
+        <div class="forecast-main">
+          <div class="forecast-icon">
+            <img src="" alt="Sunny">
+          </div>
+          <div class="forecast-temp">23°C</div>
+        </div>
+        <div class="forecast-details">
+          <span>OVERCAST CLOUD</span>
+          <div class="forecast-info">
+            <span>H: 65%</span>
+            <span>W: 8 km/h</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
